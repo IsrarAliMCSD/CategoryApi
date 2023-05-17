@@ -1,0 +1,11 @@
+﻿elow you can find the Nuget packages required to run this application. 
+Those Nuget packages are needed to scaffold and connect to our existing database.
+
+EntityFramework
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+PM> Scaffold-DbContext "Data Source=DESKTOP-IECBGH9\SQLEXPRESS;Initial Catalog=EComMgmt;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+ Microsoft.AspNetCore.Mvc.NewtonsoftJson 
