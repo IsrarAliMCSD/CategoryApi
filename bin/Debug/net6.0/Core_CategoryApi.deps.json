@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Core_CategoryApi/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.28",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
@@ -88,6 +89,17 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.28": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.21.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.1.28.0",
+            "fileVersion": "3.100.2822.36402"
+          }
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/6.0.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -2554,6 +2566,13 @@
       "sha512": "sha512-uJhZlGMkXDaFYsH8V9S6o1EyvsUqB9mpU4DVBXNr0DXZVzZMhuLP1IkLj5xK3EKlaAcvkFkZv3eSvuz360wb3Q==",
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CJm8ONdSVt1+RMWsl0yh3OR5cDuAkU1tpWU+HgNUmom9kHMhAC4FdyqtDagtdWTfoFfS3F9UK72quCQ2kBXdJA==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.28",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.28.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/6.0.0": {
       "type": "package",

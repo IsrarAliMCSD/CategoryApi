@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FkOl1ZkK40WXkw2QJm32Cxtt+IpEDdstuVCCFbYpn1l7JkUElrgv5EXpVSEmxeFFxV7sfTkHlRkcbOQ2jMlUXw==",
+  "dgSpecHash": "8NmszSG5B6QJA+MesnErkgUSxWBWztB3MhIQGroxRDBDy3VnlPXtWf4n+xjqlpfRNUcGJD/XDTQo9oKwD23lyg==",
   "success": true,
-  "projectFilePath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\Core_CategoryApi.csproj",
+  "projectFilePath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\Core_CategoryApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -10,6 +10,7 @@
     "C:\\Users\\HP\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.28\\microsoft.aspnetcore.authentication.jwtbearer.3.1.28.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.0\\microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.0\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",

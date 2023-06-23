@@ -17,15 +17,17 @@ public partial class EcomMgmtContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<Product> Products { get; set; }
+
     public virtual DbSet<Role> Roles { get; set; }
+
+    public virtual DbSet<SubCategory> SubCategories { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-IECBGH9\\SQLEXPRESS;Initial Catalog=EComMgmt;Trusted_Connection=SSPI;Encrypt=false;Integrated Security=True;");
-    //options.UseSqlServer("data source=localhost;Initial Catalog=CompanyDB;Integrated Security=True;Trust Server Certificate=true;"));
-
+        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-IECBGH9\\SQLEXPRESS;Initial Catalog=EComMgmt;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true;Integrated Security=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -52,6 +54,18 @@ public partial class EcomMgmtContext : DbContext
             entity.Property(e => e.LastModifiedDate).HasColumnType("datetime");
         });
 
+        modelBuilder.Entity<Product>(entity =>
+        {
+            entity.ToTable("Product");
+
+            entity.Property(e => e.Detail)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.ProductName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+        });
+
         modelBuilder.Entity<Role>(entity =>
         {
             entity.ToTable("Role");
@@ -67,6 +81,30 @@ public partial class EcomMgmtContext : DbContext
             entity.Property(e => e.RoleName)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<SubCategory>(entity =>
+        {
+            entity.ToTable("SubCategory");
+
+            entity.Property(e => e.CreatdDate).HasColumnType("datetime");
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.LastModifiedBy)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.LastModifiedDate).HasColumnType("datetime");
+            entity.Property(e => e.SubCaegoryDetail)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+            entity.Property(e => e.SubCategoryName)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.Category).WithMany(p => p.SubCategories)
+                .HasForeignKey(d => d.CategoryId)
+                .HasConstraintName("FK_SubCategory_Category");
         });
 
         modelBuilder.Entity<User>(entity =>

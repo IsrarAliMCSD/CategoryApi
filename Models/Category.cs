@@ -28,4 +28,6 @@ public partial class Category
     public DateTime? LastModifiedDate { get; set; }
 
     public bool IsActive { get; set; }
+
+    public virtual ICollection<SubCategory> SubCategories { get; } = new List<SubCategory>();
 }

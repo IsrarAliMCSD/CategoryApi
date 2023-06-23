@@ -9,3 +9,7 @@ Microsoft.EntityFrameworkCore.Tools
 PM> Scaffold-DbContext "Data Source=DESKTOP-IECBGH9\SQLEXPRESS;Initial Catalog=EComMgmt;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
  Microsoft.AspNetCore.Mvc.NewtonsoftJson 
+
+ https://learn.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-7.0
+
+  Scaffold-DbContext "Data Source=DESKTOP-IECBGH9\SQLEXPRESS;Initial Catalog=EComMgmt;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force

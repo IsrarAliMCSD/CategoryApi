@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\Core_CategoryApi.csproj": {}
+    "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\Core_CategoryApi.csproj": {}
   },
   "projects": {
-    "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\Core_CategoryApi.csproj": {
+    "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\Core_CategoryApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\Core_CategoryApi.csproj",
+        "projectUniqueName": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\Core_CategoryApi.csproj",
         "projectName": "Core_CategoryApi",
-        "projectPath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\Core_CategoryApi.csproj",
+        "projectPath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\Core_CategoryApi.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\SampleProject\\obj\\",
+        "outputPath": "C:\\Israr\\DotNetCoreProject\\CategoryApi\\CategoryApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.28, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[6.0.0, )"
