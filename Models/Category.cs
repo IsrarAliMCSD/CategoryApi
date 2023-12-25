@@ -30,4 +30,5 @@ public partial class Category
     public bool IsActive { get; set; }
 
     public virtual ICollection<SubCategory> SubCategories { get; } = new List<SubCategory>();
+    public virtual ICollection<Product> Products { get; } = new List<Product>();
 }
